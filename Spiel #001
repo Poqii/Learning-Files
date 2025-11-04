@@ -1,0 +1,24 @@
+To check if a data type is the one you want, you use isintance(). This is a function which requires you to list a specified data type following your object that you want to check against. 
+E.g. isinstance('Hello, World!', bool) #False
+
+isinstance() can be used in several useful ways; you can check for invalid inputs and to use different ways of handling responses via if statements. 
+Like in, 
+x=input("Name something.")
+if isinstance(x, str):
+    print("That's a string.")
+else:
+    print("That ain't a string.")
+
+The difference between "=, == and is" is a few things.
+
+= is just for assignment, it doesn't mean equal in the math sense. 
+
+== checks if two objects have equivalent value, while is checks if two objects point to the exact same thing in memory.
+
+What does this mean? Well, imagine two streets called Major and Minor--on these streets, the first house looks exactly the same in every way possible. Same people, same alabaster walls etc. 
+
+These two houses are the same; equal. So if == would come up true if I applied it to these two houses.
+
+But is wouldn't. This is because althought everything's the same, the address isn't. The houses are on different streets.
+
+That's the difference between is and ==.
