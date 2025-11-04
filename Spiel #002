@@ -1,0 +1,20 @@
+A binary operation in python is, in simple terms, a way to make a value out of two values.
+
+Augmented assignment operators take these and combines them with an assignment operator(=).
+e.g. instead of:
+x=10
+x=x+5
+print(x) #15
+you do:
+x+=5
+print(x) #15
+
+The walrus operator is a bit special, it ain't a type of augmented assignment operator. It allows you to use assignment inside of an expression, for example:
+if (m := len(word))>0:
+
+rather than:
+
+m= len(word)
+if m>0:
+
+You only nee the first parantheses to specify what to assign to m in this case.
