@@ -1,0 +1,36 @@
+Lists are organized arrangements of objects that are zero indexed and mutable, meaning the first item is at the index zero, and you can change the items in a list.
+Lists use square brackets.
+
+This example list will be used throughout this file: a_list= ["one", "two", "three", ['four','five']]
+
+To change an item, I can just do a_list[index] and replace it with a new value.
+e.g. a_list[0]="Five"
+print(a_list) # ["Five", "two", "three", ['four','five']]
+
+To remove an item from a list, use the del statement
+For example: del a_list[1:3]
+print(a_list) #one
+
+When printing lists, to get rid of the square brackets, unpack the list using the splat operator *.
+e.g. print(*a_list) #one two three four
+
+You can also access an item of a list within a list. 
+print(a_list[3][1]) #five
+
+Unrelated note, you can tell Python how to unpack something using the * operator.
+
+Unpacking for iterables is taking them apart and assigning each of the items into new targets or passing each item as an argument.
+
+For example:
+
+a, *b = a_list # a is now assigned to one, while b is assigned to all the rest.
+
+This happens because the * doesn't tell python to unpack the thing it's next to like earlier, but rather tells it how to split the items.
+
+A final thing is just a way to cull what ya get.
+
+a_list[1::2] #[two,['four','five']
+
+Interestingly that last little number is added onto the start number, not just every increment of 2 starting from the position of 0.
+
+
