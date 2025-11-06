@@ -1,0 +1,14 @@
+Lambdas are keywords that create function objects anonymously.
+They work in this form:
+
+lambda arguments:expression
+
+e.g. a= lambda x:x-3
+print(a(3)) #0 
+
+An iterable is something that can be iterated over, this is just a way of saying running each item over.
+
+The map() function applies one function to an iterable.
+
+e.g. a=[1,2,3]
+print(list(map(lambda x:x-1, a)) #[0,1,2]
