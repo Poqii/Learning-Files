@@ -1,2 +1,2 @@
 # Learning-Files
-The documentation of learning Python via trying to explain them to myself. 
+The documentation of learning Python via trying to explain it to myself. 
