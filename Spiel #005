@@ -1,0 +1,29 @@
+An iterable in python is something you can loop over; while an iterator is the thing that iterates over an iterable that also tracks what position of the iterable it is at.
+This means an iterator is made up of two main parts.
+If you want to iterate over an iterable (like a list), you can use the function iter()
+e.g. a=iter([1,2,3,4])
+
+For this example, if you call next(a) four times, it will appear as:
+1
+2
+3
+4
+
+If you call it another time after that, you'll get:
+StopIteration.
+
+This is because iter() created an iterator object and assigned it to a, while next() is a function.
+
+Enumerate() is basically a more complex version of an iterator, where now we also track the index of the value with the value itself.
+
+e.g. a = [1,2,3,4] 
+b = enumerate(a)
+print(next(b))
+print(next(b))
+
+#(0,1) (1,2)
+
+zip() takes two iterables and produces tuples by matching'em up.
+
+
+
